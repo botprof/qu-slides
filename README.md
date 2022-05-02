@@ -1,4 +1,4 @@
-# qu-slides: Presentation Slides LaTeX Class and Template for Queen's University
+# qu-slides: LaTeX Beamer Class and Presentation Template for Queen's University
 
 This template provides a simple and clean [LaTeX Beamer](https://ctan.org/pkg/beamer) class to approximately look like the [visual identity](https://www.queensu.ca/brand-central/) standard for [Queen’s University](http://www.queensu.ca) at Kingston, Ontario, Canada. 
 
