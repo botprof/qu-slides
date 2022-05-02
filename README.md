@@ -6,7 +6,7 @@ This LaTeX template is particularly useful for technical presentations involving
 
 ## Example Output
 
-See the example [PDF output](qu-slides-example.pdf) included in this repository.
+See the [example PDF output](qu-slides-example.pdf) included in this repository.
 
 ## Dependencies
 
