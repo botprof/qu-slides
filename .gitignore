@@ -1,0 +1,13 @@
+_minted*
+.DS_store
+*.aux
+*.synctex.gz
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.blg
+*.bbl
+*.docx
+*.code-workspace
