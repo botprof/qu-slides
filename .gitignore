@@ -11,3 +11,4 @@ _minted*
 *.bbl
 *.docx
 *.code-workspace
+*.vrb
