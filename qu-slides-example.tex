@@ -1,0 +1,274 @@
+% QU-SLIDES-EXAMPLE.TEX
+% Created 2022/05/01 by Joshua A. Marshall <joshua.marshall@queensu.ca>
+
+\documentclass[fleqn]{qu-slides}
+
+% ---------------------------------------------------------------------------
+% INSTRUCTIONS
+% 
+% To change the background for a slide (and subsequent slides),
+% invoke one of the following commands to switch backgrounds.
+% 
+% \SlideTitleBlue
+% \SlideTitleRed
+% \SlideTitleGold
+% \SlideTitleGrey
+% \SlideThemeWhite
+% \SlideThemeBlue
+% \SlideThemeGrey
+% \SlideBlack
+% \SlideBlue
+% \SlideRed
+% \SlideWhite
+% \SlideGrey
+
+% ---------------------------------------------------------------------------
+% TEMPLATE OPTIONS
+
+% Uncomment the line below if you want to remove the slide numbers
+% \setbeamertemplate{footline}{~}
+
+% ---------------------------------------------------------------------------
+% PRESENTATION INFO
+
+\title{The Presentation Title}
+\subtitle{A Subtitle for the Presentation}
+\author{Firstname M.~Lastname}
+\institute{
+    Department of Something \\
+    Queen's University \\ 
+    Kingston, Ontario, Canada
+}
+\date{\today}
+
+% ---------------------------------------------------------------------------
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% TITLE SLIDES
+
+% Default theme title slide (blue)
+\SlideTitleBlue
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Alternate theme title slide (red)
+\SlideTitleRed
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Alternate theme title slide (gold)
+\SlideTitleGold
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Alternate theme title slide (grey)
+\SlideTitleGrey
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% ---------------------------------------------------------------------------
+% OUTLINE SLIDE
+
+\SlideThemeWhite
+\begin{frame}
+    \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+
+% ---------------------------------------------------------------------------
+% NEW SECTION SLIDE
+
+\section{Introduction}
+
+\SlideThemeBlue
+\begin{frame}
+    \flushleft
+    {\bf\LARGE \insertsection}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideThemeWhite
+\begin{frame}
+    \frametitle{Basic Theme Slide with Bullets}
+    \begin{itemize}
+        \item Itemized bullet number 1
+        \begin{itemize}
+            \item Sub-bullet number 1.1
+            \item Sub-bullet number 1.2
+        \end{itemize}
+        \item Itemized bullet number 2
+    \end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideThemeWhite
+\begin{frame}
+    \frametitle{Colourful Slide with a Numbered List}
+    \begin{enumerate}
+        \item Enumerated item number 1
+        \item Enumerated item number 2
+    \end{enumerate}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+% NEW SECTION SLIDE
+
+\section{Another Section}
+
+\SlideThemeGrey
+\begin{frame}
+    \flushleft
+    {\bf\LARGE \insertsection}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideWhite
+\begin{frame}[fragile]
+    \frametitle{Code with Syntax Highlighting}
+    \begin{block}{Example Python Code Listing}
+    \begin{minted}{python}
+import numpy as np
+x = np.zeros(5)
+    \end{minted}
+    \end{block}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideWhite
+\begin{frame}[fragile]
+    \frametitle{Example Theorem Environment}
+    \begin{thm}
+        The equilibrium point $\mbf{x}=\mbf{0}$ of $\dot{\mbf{x}}=\mbf{Fx}$ is asymptotically stable if and only if the eigenvalues $\lambda_{i}$ of $\mbf{F}$ satisfy $\textup{Re}\lambda_{i}<0$.
+    \end{thm}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideWhite
+\begin{frame}[fragile]
+    \frametitle{Example Alert Block}
+    \begin{alertblock}{This is an Alert Block}
+        Use this environment to draw attention to important stuff.
+    \end{alertblock}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideWhite
+\begin{frame}
+    \frametitle{Adding a Figure and Using a Blank Slide}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item This is a standard bullet item
+            \item[] This is another bullet item, but without the bullet
+            \item Notice how to include a caption
+        \end{itemize}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \flushleft
+            \includegraphics[width=1.0\columnwidth]{logo/qu-logo-vertical-colour.pdf}
+            \caption{This is the Queen's logo}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideWhite
+\begin{frame}
+    \frametitle{Here is a Table Example}
+    \begin{table}
+        \caption{This is an example of a table caption.}
+        \flushleft
+        \begin{tabular}{lccc}
+            \toprule
+                \bf Small column & \multicolumn{3}{c}{\bf Big column} \\
+            \midrule
+                Grouped items & \multicolumn{3}{c}{Item 1} \\
+            \cmidrule{2-4}
+                & \multicolumn{3}{c}{Item 2} \\
+            \midrule
+                Usual row & Spam & Bacon & Eggs \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+% TODO: Insert an example with a table
+
+% ---------------------------------------------------------------------------
+
+\SlideBlack
+\begin{frame}
+    \frametitle{This Slide is Black and Has Maths}
+    \begin{columns}
+        \column{0.5\textwidth}
+        Try to integrate
+        \begin{equation}
+            x_0=\int_0^\infty f_x(\tau)d\tau
+        \end{equation}
+        where $\tau\in\Real$ is a variable.
+        \column{0.5\textwidth}
+        \begin{thm}
+            This is a very important theorem.
+        \end{thm}
+    \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideBlue 
+\begin{frame}
+    \centering
+    \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-reverse.pdf}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideRed
+\begin{frame}
+    \centering
+    \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-reverse.pdf}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideGrey
+\begin{frame}
+    \centering
+    \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-colour.pdf}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SlideThemeGrey
+\begin{frame}
+    \begin{columns}
+        \column{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{logo/qu-logo-vertical-colour.pdf}
+        \column{0.6\textwidth}
+        {\large\bf \insertauthor} \\
+        \insertinstitute \\
+        Tel: +1 613-533-6000 ext.\ 55555 \\
+        Email firstname.lastname@queensu.ca \\
+        Web: www.queensu.ca
+    \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\end{document}
