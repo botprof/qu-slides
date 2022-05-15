@@ -10,12 +10,12 @@
 \usefonttheme{structurebold}
 
 % Set up fonts as you like them
-\RequirePackage{cmbright}
-\RequirePackage[OT1]{fontenc}
+% \RequirePackage{cmbright}
+% \RequirePackage[OT1]{fontenc}
 
 % For Queen's standard font use this one
-% \RequirePackage[default,scale=0.85]{opensans}
-% \RequirePackage{newtxsf}
+\RequirePackage[default,scale=0.85]{opensans}
+\RequirePackage{newtxsf}
 
 % For code snippets in your slides
 \RequirePackage{minted}

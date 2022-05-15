@@ -12,3 +12,5 @@ _minted*
 *.docx
 *.code-workspace
 *.vrb
+*.nav
+*.snm
