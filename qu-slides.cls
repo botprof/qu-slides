@@ -15,7 +15,8 @@
 
 % For Queen's standard font use this one
 \RequirePackage[default,scale=0.85]{opensans}
-\RequirePackage{newtxsf}
+\RequirePackage[cmintegrals]{newtxsf}
+\RequirePackage[varqu,varl]{zi4}
 
 % For code snippets in your slides
 \RequirePackage{minted}
