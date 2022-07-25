@@ -14,7 +14,7 @@
 % \RequirePackage[OT1]{fontenc}
 
 % For Queen's standard font use this one
-\RequirePackage[default,scale=0.9]{opensans}
+\RequirePackage[default,scale=0.87]{opensans}
 \RequirePackage[cmintegrals]{newtxsf}
 \RequirePackage[varqu,varl]{zi4}
 
