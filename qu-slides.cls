@@ -33,6 +33,9 @@
 % For graphics
 \RequirePackage{graphicx}
 
+% For PDF features
+\RequirePackage{pgfpages}
+
 % For background wallpaper
 \RequirePackage{wallpaper}
 
