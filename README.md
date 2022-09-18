@@ -18,7 +18,27 @@ This template includes functionality for syntax highlighting of code snippets us
 
 Minted requires the installation of additional software, Pygments.  Section 2.1 of [the minted documentation](https://mirror.csclub.uwaterloo.ca/CTAN/macros/latex/contrib/minted/minted.pdf) describes how to install Pygments.  If you use macOS, the easiest way is probably to just [install Pygments using Homebrew](https://formulae.brew.sh/formula/pygments#default).
 
-If you do not need this functionality, then you can simply comment out these lines in the [qu-slides.cls](qu-slides.cls) file and be sure to not use minted commands.
+When running LaTeX and using minted, you must invoke it with the `-shell-escape` flag so that it can access Pygments.  For example, if you are using Visual Studio Code as an IDE with the LaTeX Workshop extension and compile your document using `latexmk`, then you can edit the `settings.json` package to include the flag, as shown in the example snippet below.
+
+```json
+    "latex-workshop.latex.tools":[
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+```
+
+If you do not need this functionality, then you can simply comment out these lines shown below in the [qu-slides.cls](qu-slides.cls) file and be sure to not use minted commands in your document.
 
 ```latex
 % For code snippets in your slides
