@@ -12,6 +12,12 @@ See the [example PDF output](qu-slides-example.pdf) included in this repository.
 
 This template requires a number of packages, each loaded in the [qu-slides.cls](qu-slides.cls) file.  Most notably, the Queen's standard font is the free font [Open Sans](https://fonts.google.com/specimen/Open+Sans), which this template incorporates by using the [opensans package](https://tug.org/FontCatalogue/opensans/).
 
+### Code and Syntax Highlighting
+
+This template includes functionality for syntax highlighting of code snippets using the [minted](https://www.ctan.org/pkg/minted) package.  Overleaf has a nice [introduction to minted](https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted).
+
+Minted requires the installation of additional software, Pygments.  Section 2.1 of [the minted documentation](https://mirror.csclub.uwaterloo.ca/CTAN/macros/latex/contrib/minted/minted.pdf) describes how to install Pygments.  If you use macOS, the easiest way is probably to just [install Pygments using Homebrew](https://formulae.brew.sh/formula/pygments#default).
+
 ## License
 
 The code associated with this class and template is subject to an [MIT License](LICENSE).
