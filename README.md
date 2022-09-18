@@ -18,7 +18,7 @@ This template includes functionality for syntax highlighting of code snippets us
 
 Minted requires the installation of additional software, Pygments.  Section 2.1 of [the minted documentation](https://mirror.csclub.uwaterloo.ca/CTAN/macros/latex/contrib/minted/minted.pdf) describes how to install Pygments.  If you use macOS, the easiest way is probably to just [install Pygments using Homebrew](https://formulae.brew.sh/formula/pygments#default).
 
-When running LaTeX and using minted, you must invoke it with the `-shell-escape` flag so that it can access Pygments.  For example, if you are using Visual Studio Code as an IDE with the LaTeX Workshop extension and compile your document using `latexmk`, then you can edit the `settings.json` package to include the flag, as shown in the example snippet below.
+When running LaTeX and using minted, you must invoke it with the `-shell-escape` flag so that it can access Pygments.  For example, if you are using Visual Studio Code as an IDE with the LaTeX Workshop extension and compile your document using `latexmk`, then you can edit the `settings.json` file to include the flag, as shown in the example snippet below.
 
 ```json
 "latex-workshop.latex.tools":[
