@@ -21,21 +21,21 @@ Minted requires the installation of additional software, Pygments.  Section 2.1 
 When running LaTeX and using minted, you must invoke it with the `-shell-escape` flag so that it can access Pygments.  For example, if you are using Visual Studio Code as an IDE with the LaTeX Workshop extension and compile your document using `latexmk`, then you can edit the `settings.json` package to include the flag, as shown in the example snippet below.
 
 ```json
-    "latex-workshop.latex.tools":[
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-shell-escape",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ],
-            "env": {}
-        },
+"latex-workshop.latex.tools":[
+    {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-shell-escape",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "-outdir=%OUTDIR%",
+            "%DOC%"
+        ],
+        "env": {}
+    },
 ```
 
 If you do not need this functionality, then you can simply comment out these lines shown below in the [qu-slides.cls](qu-slides.cls) file and be sure to not use minted commands in your document.
