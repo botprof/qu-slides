@@ -18,6 +18,16 @@ This template includes functionality for syntax highlighting of code snippets us
 
 Minted requires the installation of additional software, Pygments.  Section 2.1 of [the minted documentation](https://mirror.csclub.uwaterloo.ca/CTAN/macros/latex/contrib/minted/minted.pdf) describes how to install Pygments.  If you use macOS, the easiest way is probably to just [install Pygments using Homebrew](https://formulae.brew.sh/formula/pygments#default).
 
+If you do not need this functionality, then you can simply comment out these lines in the [qu-slides.cls](qu-slides.cls) file and be sure to not use minted commands.
+
+```latex
+% For code snippets in your slides
+\RequirePackage{minted}
+\setminted[python]{linenos=true}
+\setminted[cpp]{linenos=true}
+\renewcommand\theFancyVerbLine{\sffamily\scriptsize\arabic{FancyVerbLine}}
+```
+
 ## License
 
 The code associated with this class and template is subject to an [MIT License](LICENSE).
