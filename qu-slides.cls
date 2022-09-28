@@ -14,8 +14,9 @@
 % \RequirePackage[OT1]{fontenc}
 
 % For Queen's standard font use this one
+\RequirePackage[T1]{fontenc}
 \RequirePackage[default,scale=0.87]{opensans}
-\RequirePackage[cmintegrals]{newtxsf}
+\RequirePackage[italic]{mathastext}
 \RequirePackage[varqu,varl]{zi4}
 
 % For code snippets in your slides
