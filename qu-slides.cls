@@ -333,6 +333,7 @@
 \newcommand{\circulant}{\textup{circ}}
 \newcommand{\mbf}{\bm}
 \newcommand{\sep}{\enspace|\enspace}
+\newcommand*\dif{\mathop{}\!\textup{d}}
 
 % Theorem environments
 \newtheorem{thm}{Theorem}
