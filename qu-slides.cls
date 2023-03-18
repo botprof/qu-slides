@@ -46,10 +46,11 @@
 % Set up Queen's colours as per the official Queen's Visual Identity Guide
 % For more information visit: https://www.queensu.ca/brand-central/
 
-\definecolor{qblue}{RGB}{0,36,82}
-\definecolor{qred}{RGB}{185,14,49}
-\definecolor{qgold}{RGB}{250,189,15}
-\definecolor{qgrey}{RGB}{230,231,232}
+\definecolor{qblue}{RGB}{0,36,82} % Blue
+\definecolor{qred}{RGB}{185,14,49} % Red
+\definecolor{qgold}{RGB}{250,189,15} % Gold
+\definecolor{qlgrey}{RGB}{230,231,232} % Light grey
+\definecolor{qdgrey}{RGB}{128,130,133} % Dark grey
 
 % Gets rid of navigation symbols
 \setbeamertemplate{navigation symbols}{}
@@ -90,12 +91,12 @@
     \setbeamercolor{author in sidebar}{fg=qblue}
     \setbeamercolor{title in sidebar}{fg=qblue}
     \setbeamercolor{footline}{fg=white}
-    \setbeamercolor{enumerate item}{fg=qgrey}
+    \setbeamercolor{enumerate item}{fg=qlgrey}
     \setbeamercolor{block title alerted}{bg=qred,fg=white}
-    \setbeamercolor{block body alerted}{bg=qgrey}
+    \setbeamercolor{block body alerted}{bg=qlgrey}
     \setbeamercolor{block title}{bg=qblue,fg=white}
-    \setbeamercolor{block body}{bg=qgrey}
-    \setbeamercolor{background block}{bg=qgrey}
+    \setbeamercolor{block body}{bg=qlgrey}
+    \setbeamercolor{background block}{bg=qlgrey}
     \setbeamercolor{background canvas}{bg=white}
 }
 
@@ -129,18 +130,18 @@
     \setbeamercolor{author}{fg=qblue}
     \setbeamercolor{institute}{fg=qblue}
     \setbeamercolor{date}{fg=qblue}
-    \setbeamercolor{frametitle}{fg=qblue}
+    \setbeamercolor{frametitle}{fg=qred}
     \setbeamercolor{structure}{fg=qblue}
     \setbeamercolor{local structure}{fg=qblue}
     \setbeamercolor{author in sidebar}{fg=qblue}
     \setbeamercolor{title in sidebar}{fg=qblue}
     \setbeamercolor{footline}{fg=qblue}
-    \setbeamercolor{enumerate item}{fg=qgrey}
+    \setbeamercolor{enumerate item}{fg=qlgrey}
     \setbeamercolor{block title alerted}{bg=qred,fg=white}
-    \setbeamercolor{block body alerted}{bg=qgrey}
+    \setbeamercolor{block body alerted}{bg=qlgrey}
     \setbeamercolor{block title}{bg=qblue,fg=white}
-    \setbeamercolor{block body}{bg=qgrey}
-    \setbeamercolor{background block}{bg=qgrey}
+    \setbeamercolor{block body}{bg=qlgrey}
+    \setbeamercolor{background block}{bg=qlgrey}
     \setbeamercolor{background canvas}{bg=white}
 }
 
@@ -169,11 +170,11 @@
 % Set some other template options
 \setbeamercovered{transparent}
 \setbeamertemplate{caption}[caption name own line]
-\setbeamertemplate{sidebar canvas right}[vertical shading][bottom=white,top=qgrey!20]
+\setbeamertemplate{sidebar canvas right}[vertical shading][bottom=white,top=qlgrey!20]
 \setbeamertemplate{footline}{
     \usebeamerfont{footline}
     \hspace{28pt}
-    \insertframenumber~of~\inserttotalframenumber~---~\insertauthor
+    \color{qdgrey}\insertframenumber~of~\inserttotalframenumber~---~\insertauthor
     \vspace{18pt}
 }
 \setbeamertemplate{frametitle}{
@@ -294,7 +295,7 @@
     \DefaultColours    
     % Set the background canvas
     \setbeamertemplate{background canvas}[default]
-    \setbeamercolor{background canvas}{bg=qgrey}
+    \setbeamercolor{background canvas}{bg=qlgrey}
 }
 
 % Let's update the title page to look like the Queen's standard PPT template

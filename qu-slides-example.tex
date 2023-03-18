@@ -53,25 +53,25 @@
 
 % Default theme title slide (blue)
 \SlideTitleBlue
-\begin{frame}
+\begin{frame}[plain]
     \titlepage
 \end{frame}
 
 % Alternate theme title slide (red)
 \SlideTitleRed
-\begin{frame}
+\begin{frame}[plain]
     \titlepage
 \end{frame}
 
 % Alternate theme title slide (gold)
 \SlideTitleGold
-\begin{frame}
+\begin{frame}[plain]
     \titlepage
 \end{frame}
 
 % Alternate theme title slide (grey)
 \SlideTitleGrey
-\begin{frame}
+\begin{frame}[plain]
     \titlepage
 \end{frame}
 
@@ -90,7 +90,7 @@
 \section{Introduction}
 
 \SlideThemeBlue
-\begin{frame}
+\begin{frame}[plain]
     \flushleft
     {\bf\LARGE \insertsection}
 \end{frame}
@@ -131,7 +131,7 @@
 \section{Another Section}
 
 \SlideThemeGrey
-\begin{frame}
+\begin{frame}[plain]
     \flushleft
     {\bf\LARGE \insertsection}
 \end{frame}
@@ -155,7 +155,7 @@ x = np.zeros(5)
 \begin{frame}[fragile]
     \frametitle{Example Theorem Environment}
     \begin{thm}
-        The equilibrium point $\mbf{x}=\mbf{0}$ of $\dot{\mbf{x}}=\mbf{Fx}$ is asymptotically stable if and only if the eigenvalues $\lambda_{i}$ of $\mbf{F}$ satisfy $\textup{Re}\lambda_{i}<0$.
+        The equilibrium point $\mbf{x}=\mbf{0}$ of $\dot{\mbf{x}}=\mbf{Fx}$ is asymptotically stable if and only if the eigenvalues $\lambda_{i}$ of $\mbf{F}$ satisfy $\textup{Re}\lambda_{i}<0$
     \end{thm}
 \end{frame}
 
@@ -165,7 +165,7 @@ x = np.zeros(5)
 \begin{frame}[fragile]
     \frametitle{Example Alert Block}
     \begin{alertblock}{This is an Alert Block}
-        Use this environment to draw attention to important stuff.
+        Use this environment to draw attention to important stuff
     \end{alertblock}
 \end{frame}
 
@@ -196,7 +196,7 @@ x = np.zeros(5)
 \begin{frame}
     \frametitle{Here is a Table Example}
     \begin{table}
-        \caption{This is an example of a table caption.}
+        \caption{This is an example of a table caption}
         \flushleft
         \begin{tabular}{lccc}
             \toprule
@@ -223,14 +223,14 @@ x = np.zeros(5)
     \frametitle{This Slide is Black and Has Maths}
     \begin{columns}
         \column{0.5\textwidth}
-        Try to integrate
-        \begin{equation}
+        Try to integrate this function
+        \begin{equation*}
             x_0=\int_0^\infty f_x(\tau)d\tau
-        \end{equation}
-        where $\tau\in\Real$ is a variable.
+        \end{equation*}
+        where $\tau\in\Real$ is a variable
         \column{0.5\textwidth}
         \begin{thm}
-            This is a very important theorem.
+            This is a very important theorem
         \end{thm}
     \end{columns}
 \end{frame}
@@ -238,7 +238,7 @@ x = np.zeros(5)
 % ---------------------------------------------------------------------------
 
 \SlideBlue 
-\begin{frame}
+\begin{frame}[plain]
     \centering
     \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-reverse.pdf}
 \end{frame}
@@ -246,7 +246,7 @@ x = np.zeros(5)
 % ---------------------------------------------------------------------------
 
 \SlideRed
-\begin{frame}
+\begin{frame}[plain]
     \centering
     \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-reverse.pdf}
 \end{frame}
@@ -254,7 +254,7 @@ x = np.zeros(5)
 % ---------------------------------------------------------------------------
 
 \SlideGrey
-\begin{frame}
+\begin{frame}[plain]
     \centering
     \includegraphics[height=0.9\textheight]{logo/qu-logo-vertical-colour.pdf}
 \end{frame}
@@ -262,7 +262,7 @@ x = np.zeros(5)
 % ---------------------------------------------------------------------------
 
 \SlideThemeGrey
-\begin{frame}
+\begin{frame}[plain]
     \begin{columns}
         \column{0.4\textwidth}
         \centering
