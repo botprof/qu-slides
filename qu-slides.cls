@@ -51,6 +51,7 @@
 \definecolor{qgold}{RGB}{250,189,15} % Gold
 \definecolor{qlgrey}{RGB}{230,231,232} % Light grey
 \definecolor{qdgrey}{RGB}{128,130,133} % Dark grey
+\definecolor{qblack}{RGB}{33,33,33} % Black for screens
 
 % Gets rid of navigation symbols
 \setbeamertemplate{navigation symbols}{}
@@ -115,11 +116,11 @@
     \setbeamercolor{title in sidebar}{fg=white}
     \setbeamercolor{footline}{fg=white}
     \setbeamercolor{enumerate item}{fg=white}
-    \setbeamercolor{block title alerted}{bg=black!85,fg=white}
-    \setbeamercolor{block body alerted}{bg=black!75}
-    \setbeamercolor{block title}{bg=black!75,fg=white}
-    \setbeamercolor{block body}{bg=black!85}
-    \setbeamercolor{background block}{bg=black!75}
+    \setbeamercolor{block title alerted}{bg=qred,fg=white}
+    \setbeamercolor{block body alerted}{bg=qdgrey}
+    \setbeamercolor{block title}{bg=qlgrey,fg=qblack}
+    \setbeamercolor{block body}{bg=qdgrey}
+    \setbeamercolor{background block}{bg=qdgrey}
 }
 
 % Change default colours to fit our theme and for use with light backgrounds
@@ -162,7 +163,7 @@
     \setbeamercolor{enumerate item}{fg=white}
     \setbeamercolor{block title alerted}{bg=qred,fg=white}
     \setbeamercolor{block body alerted}{bg=qdgrey}
-    \setbeamercolor{block title}{bg=qlgrey,fg=black}
+    \setbeamercolor{block title}{bg=qlgrey,fg=qblack}
     \setbeamercolor{block body}{bg=qdgrey}
     \setbeamercolor{background block}{bg=qdgrey}
 }
@@ -268,7 +269,7 @@
     \WhiteColours
     % Set the background canvas
     \setbeamertemplate{background canvas}[default]
-    \setbeamercolor{background canvas}{bg=black}  
+    \setbeamercolor{background canvas}{bg=qblack}  
 }
 
 % Configure theme "SlideBlue"
