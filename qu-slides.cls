@@ -153,18 +153,18 @@
     \setbeamercolor{author}{fg=white}
     \setbeamercolor{institute}{fg=white}
     \setbeamercolor{date}{fg=white}
-    \setbeamercolor{frametitle}{fg=white}
+    \setbeamercolor{frametitle}{fg=qgold}
     \setbeamercolor{structure}{fg=white}
     \setbeamercolor{local structure}{fg=white}
     \setbeamercolor{author in sidebar}{fg=white}
     \setbeamercolor{title in sidebar}{fg=white}
     \setbeamercolor{footline}{fg=white}
     \setbeamercolor{enumerate item}{fg=white}
-    \setbeamercolor{block title alerted}{bg=black!85,fg=white}
-    \setbeamercolor{block body alerted}{bg=black!75}
-    \setbeamercolor{block title}{bg=black!75,fg=white}
-    \setbeamercolor{block body}{bg=black!85}
-    \setbeamercolor{background block}{bg=black!75}
+    \setbeamercolor{block title alerted}{bg=qred,fg=white}
+    \setbeamercolor{block body alerted}{bg=qdgrey}
+    \setbeamercolor{block title}{bg=qlgrey,fg=black}
+    \setbeamercolor{block body}{bg=qdgrey}
+    \setbeamercolor{background block}{bg=qdgrey}
 }
 
 % Set some other template options
