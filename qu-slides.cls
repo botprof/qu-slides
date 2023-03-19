@@ -51,6 +51,7 @@
 \definecolor{qgold}{RGB}{250,189,15} % Gold
 \definecolor{qlgrey}{RGB}{230,231,232} % Light grey
 \definecolor{qdgrey}{RGB}{128,130,133} % Dark grey
+\definecolor{qdlime}{RGB}{106, 98, 92} % Dark limestone
 \definecolor{qblack}{RGB}{33,33,33} % Black for screens
 
 % Gets rid of navigation symbols
@@ -117,10 +118,10 @@
     \setbeamercolor{footline}{fg=white}
     \setbeamercolor{enumerate item}{fg=white}
     \setbeamercolor{block title alerted}{bg=qred,fg=white}
-    \setbeamercolor{block body alerted}{bg=qdgrey}
+    \setbeamercolor{block body alerted}{bg=qdlime}
     \setbeamercolor{block title}{bg=qlgrey,fg=qblack}
-    \setbeamercolor{block body}{bg=qdgrey}
-    \setbeamercolor{background block}{bg=qdgrey}
+    \setbeamercolor{block body}{bg=qdlime}
+    \setbeamercolor{background block}{bg=qdlime}
 }
 
 % Change default colours to fit our theme and for use with light backgrounds
