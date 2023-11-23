@@ -8,7 +8,9 @@
 % 
 % To change the background for a slide (and subsequent slides),
 % invoke one of the following commands to switch backgrounds.
-% 
+%
+% QUEEN'S UNIVERSITY STYLES
+%
 % \SlideTitleBlue
 % \SlideTitleRed
 % \SlideTitleGold
@@ -16,6 +18,17 @@
 % \SlideThemeWhite
 % \SlideThemeBlue
 % \SlideThemeGrey
+%
+% SMITH ENGINEERING STYLES
+%
+% \SmithTitleGold
+% \SmithTitleGrey
+% \SmithBlueGold
+% \SmithWhiteGold
+% \SmithWhiteGrey
+%
+% GENERIC SLIDE STYLES
+%
 % \SlideBlack
 % \SlideBlue
 % \SlideRed
@@ -71,6 +84,18 @@
 
 % Alternate theme title slide (grey)
 \SlideTitleGrey
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+% Default Smith theme title slide (gold)
+\SmithTitleGold
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+% Alternate Smith theme title slide (grey)
+\SmithTitleGrey
 \begin{frame}[plain]
     \titlepage
 \end{frame}
@@ -291,6 +316,23 @@ x = np.zeros(5)
         \column{0.4\textwidth}
         \centering
         \includegraphics[width=\textwidth]{logo/qu-logo-vertical-colour.pdf}
+        \column{0.6\textwidth}
+        {\large\bf \insertauthor} \\
+        \small \insertinstitute \\
+        Tel: +1 613-533-6000 ext.\ 55555 \\
+        Email: firstname.lastname@queensu.ca \\
+        Web: www.queensu.ca
+    \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+
+\SmithWhiteGold
+\begin{frame}[plain]
+    \begin{columns}
+        \column{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{logo/smith-logo-vertical.pdf}
         \column{0.6\textwidth}
         {\large\bf \insertauthor} \\
         \small \insertinstitute \\

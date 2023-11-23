@@ -300,6 +300,56 @@
     \setbeamercolor{background canvas}{bg=qlgrey}
 }
 
+% Configure theme "SmithTitleGold"
+\newcommand{\SmithTitleGold}{
+    % Set the background canvas
+    \setbeamertemplate{background canvas}{
+        \CenterWallPaper{1}{bgs/smith-title-gold.pdf}
+    }
+    % Set the colours
+    \DefaultTitleColours    
+}
+
+% Configure theme "SmithTitleGrey"
+\newcommand{\SmithTitleGrey}{
+    % Set the background canvas
+    \setbeamertemplate{background canvas}{
+        \CenterWallPaper{1}{bgs/smith-title-grey.pdf}
+    }
+    % Set the colours
+    \DefaultTitleColours    
+}
+
+% Configure theme "SmithBlueGold"
+\newcommand{\SmithBlueGold}{
+    % Set the background canvas
+    \setbeamertemplate{background canvas}{
+        \CenterWallPaper{1}{bgs/smith-blue-gold.pdf}
+    }
+    % Set the colours
+    \WhiteColours
+}
+
+% Configure theme "SmithWhiteGold"
+\newcommand{\SmithWhiteGold}{
+    % Set the background canvas
+    \setbeamertemplate{background canvas}{
+        \CenterWallPaper{1}{bgs/smith-white-gold.pdf}
+    }
+    % Set the colours
+    \DefaultColours
+}
+
+% Configure theme "SmithWhiteGrey"
+\newcommand{\SmithWhiteGrey}{
+    % Set the background canvas
+    \setbeamertemplate{background canvas}{
+        \CenterWallPaper{1}{bgs/smith-white-grey.pdf}
+    }
+    % Set the colours
+    \DefaultColours
+}
+
 % Let's update the title page to look like the Queen's standard PPT template
 \setbeamertemplate{title page}{
     \begin{beamercolorbox}[]{title}
