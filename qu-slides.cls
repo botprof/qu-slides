@@ -11,12 +11,11 @@
 
 % Set up fonts as you like them
 % \RequirePackage{cmbright}
-% \RequirePackage[OT1]{fontenc}
+% \RequirePackage[T1]{fontenc}
 
 % For Queen's standard font use this one
 \RequirePackage[T1]{fontenc}
-\RequirePackage[default,scale=0.87]{opensans}
-\RequirePackage[italic]{mathastext}
+\RequirePackage[default,scale=0.95]{opensans}
 \RequirePackage[varqu,varl]{zi4}
 
 % For code snippets in your slides
@@ -167,6 +166,29 @@
     \setbeamercolor{block title}{bg=qlgrey,fg=qblack}
     \setbeamercolor{block body}{bg=qdgrey}
     \setbeamercolor{background block}{bg=qdgrey}
+}
+
+% Change default colours to fit our theme and for use with light Smith backgrounds
+\newcommand{\SmithColours}{
+    \setbeamercolor{normal text}{fg=qblue}
+    \usebeamercolor[fg]{normal text}
+    \setbeamercolor{title}{fg=qblue}
+    \setbeamercolor{author}{fg=qblue}
+    \setbeamercolor{institute}{fg=qblue}
+    \setbeamercolor{date}{fg=qblue}
+    \setbeamercolor{frametitle}{fg=qblue}
+    \setbeamercolor{structure}{fg=qblue}
+    \setbeamercolor{local structure}{fg=qblue}
+    \setbeamercolor{author in sidebar}{fg=qblue}
+    \setbeamercolor{title in sidebar}{fg=qblue}
+    \setbeamercolor{footline}{fg=qblue}
+    \setbeamercolor{enumerate item}{fg=qlgrey}
+    \setbeamercolor{block title alerted}{bg=qred,fg=white}
+    \setbeamercolor{block body alerted}{bg=qlgrey}
+    \setbeamercolor{block title}{bg=qblue,fg=white}
+    \setbeamercolor{block body}{bg=qlgrey}
+    \setbeamercolor{background block}{bg=qlgrey}
+    \setbeamercolor{background canvas}{bg=white}
 }
 
 % Set some other template options
@@ -337,7 +359,7 @@
         \CenterWallPaper{1}{bgs/smith-white-gold.pdf}
     }
     % Set the colours
-    \DefaultColours
+    \SmithColours
 }
 
 % Configure theme "SmithWhiteGrey"
@@ -347,7 +369,7 @@
         \CenterWallPaper{1}{bgs/smith-white-grey.pdf}
     }
     % Set the colours
-    \DefaultColours
+    \SmithColours
 }
 
 % Let's update the title page to look like the Queen's standard PPT template
