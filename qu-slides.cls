@@ -14,9 +14,12 @@
 % \RequirePackage[T1]{fontenc}
 
 % For Queen's standard font use this one
+\RequirePackage{arev}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[default,scale=0.95]{opensans}
+\RequirePackage[default,scale=1.05]{opensans} 
+% \RequirePackage[italic]{mathastext}
 \RequirePackage[varqu,varl]{zi4}
+\linespread{1.10}
 
 % For code snippets in your slides
 \RequirePackage{minted}
@@ -25,7 +28,7 @@
 \renewcommand\theFancyVerbLine{\sffamily\scriptsize\arabic{FancyVerbLine}}
 
 % For proper math stuff
-\RequirePackage{amsmath,amsfonts,amssymb,bm}
+\RequirePackage{amsmath,amsfonts,amssymb}
 
 % For colours
 \RequirePackage{color}
@@ -376,7 +379,7 @@
 \setbeamertemplate{title page}{
     \begin{beamercolorbox}[]{title}
         \begin{flushleft}
-            \vspace{0pt}
+            \vspace{-18pt}
             \usebeamerfont{title}
             \inserttitle
             \usebeamerfont{subtitle} \\
@@ -406,7 +409,7 @@
 \newcommand{\Img}{\textup{Img}}
 \newcommand{\diag}{\textup{diag}}
 \newcommand{\circulant}{\textup{circ}}
-\newcommand{\mbf}{\bm}
+\newcommand{\mbf}{\mathbf}
 \newcommand{\sep}{\enspace|\enspace}
 \newcommand*\dif{\mathop{}\!\textup{d}}
 

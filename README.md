@@ -50,7 +50,7 @@ If you do not need this functionality, then you can simply comment out these lin
 
 ## Contact the Author
 
-[Joshua Marshall](https://www.ece.queensu.ca/people/j-marshall), PhD, PEng  
+[Joshua Marshall](https://offroad.engineering.queensu.ca/people/joshua-marshall/), PhD, PEng  
 [Department of Electrical and Computer Engineering](https://www.ece.queensu.ca)  
 [Queen's University](http://www.queensu.ca)  
 Kingston, ON K7L 3N6 Canada  
