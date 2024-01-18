@@ -14,10 +14,10 @@
 % \RequirePackage[T1]{fontenc}
 
 % For Queen's standard font use this one
-\RequirePackage{arev}
+\renewcommand\mathfamilydefault{\rmdefault}
+\RequirePackage{arevmath}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default,scale=1.05]{opensans} 
-% \RequirePackage[italic]{mathastext}
 \RequirePackage[varqu,varl]{zi4}
 \linespread{1.10}
 
@@ -409,7 +409,7 @@
 \newcommand{\Img}{\textup{Img}}
 \newcommand{\diag}{\textup{diag}}
 \newcommand{\circulant}{\textup{circ}}
-\newcommand{\mbf}{\mathbf}
+\newcommand{\mbf}{\boldsymbol}
 \newcommand{\sep}{\enspace|\enspace}
 \newcommand*\dif{\mathop{}\!\textup{d}}
 
