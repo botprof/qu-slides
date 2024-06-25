@@ -8,6 +8,8 @@ This LaTeX template is particularly useful for technical presentations involving
 
 See the [example PDF output](qu-slides-example.pdf) included in this repository.
 
+![Atl test](./qu-slides-example.png)
+
 ## Dependencies
 
 This template requires a number of packages, each loaded in the [qu-slides.cls](qu-slides.cls) file.  Most notably, the Queen's standard font is the free font [Open Sans](https://fonts.google.com/specimen/Open+Sans), which this template incorporates by using the [opensans package](https://tug.org/FontCatalogue/opensans/).
