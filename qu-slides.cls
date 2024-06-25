@@ -45,6 +45,15 @@
 % For better tables
 \RequirePackage{booktabs}
 
+% For underlines
+\RequirePackage{ulem}
+
+% For urls
+\RequirePackage{url}
+
+% For embedding videos (you need a proper viewer for this to work)
+\RequirePackage{multimedia}
+
 % Set up Queen's colours as per the official Queen's Visual Identity Guide
 % For more information visit: https://www.queensu.ca/brand-central/
 
